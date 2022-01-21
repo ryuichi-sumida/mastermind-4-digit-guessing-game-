@@ -1,0 +1,640 @@
+def hit_blow(a,b,c,d,p,q,r,s):
+    hit = 0
+    blow = 0
+    hit0 = 0
+    hit1 = 0
+    hit2 = 0
+    hit3 = 0
+    hit4 = 0
+    hit5 = 0
+    m0 = 0
+    m1 = 0
+    m2 = 0
+    m3 = 0 
+    m4 = 0
+    m5 = 0
+    n0 = 0
+    n1 = 0
+    n2 = 0
+    n3 = 0 
+    n4 = 0
+    n5 = 0
+    b0 = 0
+    b1 = 0
+    b2 = 0
+    b3 = 0
+    b4 = 0
+    b5 = 0
+    if a == 0:
+        m0 = m0 + 1
+    if b == 0:
+        m0 = m0 + 1 
+    if c == 0:
+        m0 = m0 + 1
+    if d == 0:
+        m0 = m0 + 1
+    if a == 1:
+        m1 = m1 + 1
+    if b == 1:
+        m1 = m1 + 1
+    if c == 1:
+        m1 = m1 + 1
+    if d == 1:
+        m1 = m1 + 1
+    if a == 2:
+        m2 = m2 + 1
+    if b == 2:
+        m2 = m2 + 1
+    if c == 2:
+        m2 = m2 + 1
+    if d == 2:
+        m2 = m2 + 1
+    if a == 3:
+        m3 = m3 + 1
+    if b == 3:
+        m3 = m3 + 1
+    if c == 3:
+        m3 = m3 + 1
+    if d == 3:
+        m3 = m3 + 1
+    if a == 4:
+        m4 = m4 + 1
+    if b == 4:
+        m4 = m4 + 1
+    if c == 4:
+        m4 = m4 + 1
+    if d == 4:
+        m4 = m4 + 1
+    if a == 5:
+        m5 = m5 + 1
+    if b == 5:
+        m5 = m5 + 1
+    if c == 5:
+        m5 = m5 + 1
+    if d == 5:
+        m5 = m5 + 1
+
+    if p == 0:
+        n0 = n0 + 1
+    if q == 0:
+        n0 = n0 + 1 
+    if r == 0:
+        n0 = n0 + 1
+    if s == 0:
+        n0 = n0 + 1
+    if p == 1:
+        n1 = n1 + 1
+    if q == 1:
+        n1 = n1 + 1
+    if r == 1:
+        n1 = n1 + 1
+    if s == 1:
+        n1 = n1 + 1
+    if p == 2:
+        n2 = n2 + 1
+    if q == 2:
+        n2 = n2 + 1
+    if r == 2:
+        n2 = n2 + 1
+    if s == 2:
+        n2 = n2 + 1
+    if p == 3:
+        n3 = n3 + 1
+    if q == 3:
+        n3 = n3 + 1
+    if r == 3:
+        n3 = n3 + 1
+    if s == 3:
+        n3 = n3 + 1
+    if p == 4:
+        n4 = n4 + 1
+    if q == 4:
+        n4 = n4 + 1
+    if r == 4:
+        n4 = n4 + 1
+    if s == 4:
+        n4 = n4 + 1
+    if p == 5:
+        n5 = n5 + 1
+    if q == 5:
+        n5 = n5 + 1
+    if r == 5:
+        n5 = n5 + 1
+    if s == 5:
+        n5 = n5 + 1
+    
+    if a == p and a == 0:
+        hit0 = hit0 + 1
+    if b == q and b == 0:
+        hit0 = hit0 + 1
+    if c == r and c == 0:
+        hit0 = hit0 + 1
+    if d == s and d == 0:
+        hit0 = hit0 + 1
+    if a == p and a == 1:
+        hit1 = hit1 + 1
+    if b == q and b == 1:
+        hit1 = hit1 + 1
+    if c == r and c == 1:
+        hit1 = hit1 + 1
+    if d == s and d == 1:
+        hit1 = hit1 + 1
+    if a == p and a == 2:
+        hit2 = hit2 + 1
+    if b == q and b == 2:
+        hit2 = hit2 + 1
+    if c == r and c == 2:
+        hit2 = hit2 + 1
+    if d == s and d == 2:
+        hit2 = hit2 + 1
+    if a == p and a == 3:
+        hit3 = hit3 + 1
+    if b == q and b == 3:
+        hit3 = hit3 + 1
+    if c == r and c == 3:
+        hit3 = hit3 + 1
+    if d == s and d == 3:
+        hit3 = hit3 + 1
+    if a == p and a == 4:
+        hit4 = hit4 + 1
+    if b == q and b == 4:
+        hit4 = hit4 + 1
+    if c == r and c == 4:
+        hit4 = hit4 + 1
+    if d == s and d == 4:
+        hit4 = hit4 + 1
+    if a == p and a == 5:
+        hit5 = hit5 + 1
+    if b == q and b == 5:
+        hit5 = hit5 + 1
+    if c == r and c == 5:
+        hit5 = hit5 + 1
+    if d == s and d == 5:
+        hit5 = hit5 + 1
+
+    if m0 <= n0:
+        b0 = b0 + m0 - hit0
+    else:
+        b0 = b0 + n0 - hit0
+    if m1 <= n1:
+        b1 = b1 + m1 - hit1
+    else:
+        b1 = b1 + n1 - hit1
+    if m2 <= n2:
+        b2 = b2 + m2 - hit2
+    else:
+        b2 = b2 + n2 - hit2
+    if m3 <= n3:
+        b3 = b3 + m3 - hit3
+    else:
+        b3 = b3 + n3 - hit3
+    if m4 <= n4:
+        b4 = b4 + m4 - hit4
+    else:
+        b4 = b4 + n4 - hit4
+    if m5 <= n5:
+        b5 = b5 + m5 - hit5
+    else:
+        b5 = b5 + n5 - hit5
+
+    hit = hit0 + hit1 + hit2 + hit3 + hit4 + hit5
+    blow = b0 + b1 + b2 + b3 + b4 + b5
+    return (hit, blow)
+
+def g(a):
+    i = int(a//1000)
+    j = int((a-(i*1000))//100)
+    k = int((a-(i*1000)-(j*100))//10)
+    l = int((a-(i*1000)-(j*100)-(k*10)))
+    return (i,j,k,l)
+
+l0 = []
+for p in range(5556):
+    i = g(p)[0]
+    j = g(p)[1]
+    k = g(p)[2]
+    l = g(p)[3]
+    if i < 6 and j < 6 and k < 6 and l < 6:
+        l0.append(p)
+    else:
+        continue
+
+def possible_number(p,q,r,s,h1,b1):
+    m = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(a,b,c,d,p,q,r,s)[0] == h1 and hit_blow(a,b,c,d,p,q,r,s)[1] == b1 :
+            m.append(i)
+        else:
+            continue
+    return len(m)
+
+def possible_set(p,q,r,s,h1,b1):
+    m = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(a,b,c,d,p,q,r,s)[0] == h1 and hit_blow(a,b,c,d,p,q,r,s)[1] == b1 :
+            m.append(i)
+        else:
+            continue
+    return m
+
+def possible_number2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 :
+            n.append(i)
+        else:
+            continue
+    return len(n)
+
+def possible_set2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 :
+            n.append(i)
+        else:
+            continue
+    return n
+
+def possible_hb2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2):
+    l1 = []
+    l2 = [(4,0),(3,0), (2,2), (2,1), (2,0), (1,3), (1,2),(1,1),(1,0), (0,4), (0,3), (0,2), (0,1), (0,0)]
+    for (i,j) in l2:
+        if possible_number2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,i,j) == 0:
+            continue
+        else:
+            l1.append((i,j))
+    return l1
+
+#nopl2 = number of possibilities eliminated
+def nopl2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2):
+    m = len(possible_set(p1,q1,r1,s1,h1,b1))
+    nopl = []
+    for (i,j) in possible_hb2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2):
+        nopl.append(m - possible_number2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,i,j))
+    return min(nopl)
+
+def fton_2(p1,q1,r1,s1,h1,b1):
+    m = possible_set(p1,q1,r1,s1,h1,b1)
+    if len(possible_set(p1,q1,r1,s1,h1,b1)) == 1:
+        return possible_set(p1,q1,r1,s1,h1,b1)
+    else:
+        l3=[1,-10]
+        for i in m:
+            p = g(i)[0]
+            q = g(i)[1]
+            r = g(i)[2]
+            s = g(i)[3]
+            if nopl2(p1,q1,r1,s1,h1,b1,p,q,r,s) > l3[1]:
+                l3.clear()
+                l3.append(i)
+                l3.append(nopl2(p1,q1,r1,s1,h1,b1,p,q,r,s))
+    return l3
+    
+def possible_number3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 :
+            n.append(i)
+        else:
+            continue
+    return len(n)
+
+def possible_set3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 :
+            n.append(i)
+        else:
+            continue
+    return n
+
+def possible_hb3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3):
+    l1 = []
+    l2 = [(4,0), (3,0), (2,2), (2,1), (2,0), (1,3), (1,2),(1,1),(1,0), (0,4), (0,3), (0,2), (0,1), (0,0)]
+    for (i,j) in l2:
+        if possible_number3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,i,j) == 0:
+            continue
+        else:
+            l1.append((i,j))
+    return l1
+
+#nopl2 = number of possibilities eliminated
+def nopl3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3):
+    m = len(possible_set2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2))
+    nopl = []
+    for (i,j) in possible_hb3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3):
+        nopl.append(m - possible_number3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,i,j))
+    return min(nopl)
+
+def fton_3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2):
+    m = possible_set2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2)
+    if len(possible_set2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2)) == 1:
+        return possible_set2(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2)
+    else:
+        l3=[1,-10]
+        for i in m:
+            p = g(i)[0]
+            q = g(i)[1]
+            r = g(i)[2]
+            s = g(i)[3]
+            if nopl3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p,q,r,s) > l3[1]:
+                l3.clear()
+                l3.append(i)
+                l3.append(nopl3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p,q,r,s))
+    return l3
+
+def possible_number4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 and \
+                    hit_blow(p4,q4,r4,s4,a,b,c,d)[0] == h4 and hit_blow(p4,q4,r4,s4,a,b,c,d)[1] == b4 :
+            n.append(i)
+        else:
+            continue
+    return len(n)
+
+def possible_set4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 and \
+                    hit_blow(p4,q4,r4,s4,a,b,c,d)[0] == h4 and hit_blow(p4,q4,r4,s4,a,b,c,d)[1] == b4 :
+            n.append(i)
+        else:
+            continue
+    return n
+
+def possible_hb4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4):
+    l1 = []
+    l2 = [(4,0), (3,0), (2,2), (2,1), (2,0), (1,3), (1,2),(1,1),(1,0), (0,4), (0,3), (0,2), (0,1), (0,0)]
+    for (i,j) in l2:
+        if possible_number4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,i,j) == 0:
+            continue
+        else:
+            l1.append((i,j))
+    return l1
+
+#nopl2 = number of possibilities eliminated
+def nopl4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4):
+    m = len(possible_set3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3))
+    nopl = []
+    for (i,j) in possible_hb4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4):
+        nopl.append(m - possible_number4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,i,j))
+    return min(nopl)
+
+def fton_4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3):
+    m = possible_set3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3)
+    if len(possible_set3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3)) == 1:
+        return possible_set3(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3)
+    else:
+        l3=[1,-10]
+        for i in m:
+            p = g(i)[0]
+            q = g(i)[1]
+            r = g(i)[2]
+            s = g(i)[3]
+            if nopl4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p,q,r,s) > l3[1]:
+                l3.clear()
+                l3.append(i)
+                l3.append(nopl4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p,q,r,s))
+    return l3
+
+def possible_number5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 and \
+                    hit_blow(p4,q4,r4,s4,a,b,c,d)[0] == h4 and hit_blow(p4,q4,r4,s4,a,b,c,d)[1] == b4 and \
+                        hit_blow(p5,q5,r5,s5,a,b,c,d)[0] == h5 and hit_blow(p5,q5,r5,s5,a,b,c,d)[1] == b5 :
+            n.append(i)
+        else:
+            continue
+    return len(n)
+
+def possible_set5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 and \
+                    hit_blow(p4,q4,r4,s4,a,b,c,d)[0] == h4 and hit_blow(p4,q4,r4,s4,a,b,c,d)[1] == b4 and \
+                        hit_blow(p5,q5,r5,s5,a,b,c,d)[0] == h5 and hit_blow(p5,q5,r5,s5,a,b,c,d)[1] == b5 :
+            n.append(i)
+        else:
+            continue
+    return n
+
+def possible_hb5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5):
+    l1 = []
+    l2 = [(4,0), (3,0), (2,2), (2,1), (2,0), (1,3), (1,2),(1,1),(1,0), (0,4), (0,3), (0,2), (0,1), (0,0)]
+    for (i,j) in l2:
+        if possible_number5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,i,j) == 0:
+            continue
+        else:
+            l1.append((i,j))
+    return l1
+
+#nopl2 = number of possibilities eliminated
+def nopl5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5):
+    m = len(possible_set4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4))
+    nopl = []
+    for (i,j) in possible_hb5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5):
+        nopl.append(m - possible_number5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,i,j))
+    return min(nopl)
+
+def fton_5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4):
+    m = possible_set4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4)
+    if len(possible_set4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4)) == 1:
+        return possible_set4(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4)
+    else:
+        l3=[1,-10]
+        for i in m:
+            p = g(i)[0]
+            q = g(i)[1]
+            r = g(i)[2]
+            s = g(i)[3]
+            if nopl5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p,q,r,s) > l3[1]:
+                l3.clear()
+                l3.append(i)
+                l3.append(nopl5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p,q,r,s))
+    return l3
+
+def possible_number6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p6,q6,r6,s6,h6,b6):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 and \
+                    hit_blow(p4,q4,r4,s4,a,b,c,d)[0] == h4 and hit_blow(p4,q4,r4,s4,a,b,c,d)[1] == b4 and \
+                        hit_blow(p5,q5,r5,s5,a,b,c,d)[0] == h5 and hit_blow(p5,q5,r5,s5,a,b,c,d)[1] == b5 and \
+                            hit_blow(p6,q6,r6,s6,a,b,c,d)[0] == h6 and hit_blow(p6,q6,r6,s6,a,b,c,d)[1] == b6 :
+            n.append(i)
+        else:
+            continue
+    return len(n)
+
+def possible_set6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p6,q6,r6,s6,h6,b6):
+    n = []
+    for i in l0:
+        a = g(i)[0]
+        b = g(i)[1]
+        c = g(i)[2]
+        d = g(i)[3]
+        if hit_blow(p1,q1,r1,s1,a,b,c,d)[0] == h1 and hit_blow(p1,q1,r1,s1,a,b,c,d)[1] == b1 and \
+            hit_blow(p2,q2,r2,s2,a,b,c,d)[0] == h2 and hit_blow(p2,q2,r2,s2,a,b,c,d)[1] == b2 and \
+                hit_blow(p3,q3,r3,s3,a,b,c,d)[0] == h3 and hit_blow(p3,q3,r3,s3,a,b,c,d)[1] == b3 and \
+                    hit_blow(p4,q4,r4,s4,a,b,c,d)[0] == h4 and hit_blow(p4,q4,r4,s4,a,b,c,d)[1] == b4 and \
+                        hit_blow(p5,q5,r5,s5,a,b,c,d)[0] == h5 and hit_blow(p5,q5,r5,s5,a,b,c,d)[1] == b5 and \
+                            hit_blow(p6,q6,r6,s6,a,b,c,d)[0] == h6 and hit_blow(p6,q6,r6,s6,a,b,c,d)[1] == b6 :
+            n.append(i)
+        else:
+            continue
+    return n
+
+def possible_hb6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p6,q6,r6,s6):
+    l1 = []
+    l2 = [(4,0), (3,0), (2,2), (2,1), (2,0), (1,3), (1,2),(1,1),(1,0), (0,4), (0,3), (0,2), (0,1), (0,0)]
+    for (i,j) in l2:
+        if possible_number6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p6,q6,r6,s6,i,j) == 0:
+            continue
+        else:
+            l1.append((i,j))
+    return l1
+
+#nopl2 = number of possibilities eliminated
+def nopl6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p6,q6,r6,s6):
+    m = len(possible_set5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5))
+    nopl = []
+    for (i,j) in possible_hb6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p6,q6,r6,s6):
+        nopl.append(m - possible_number6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p6,q6,r6,s6,i,j))
+    return min(nopl)
+
+def fton_6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5):
+    m = possible_set5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5)
+    if len(possible_set5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5)) == 1:
+        return possible_set5(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5)
+    else:
+        l3=[1,-10]
+        for i in m:
+            p = g(i)[0]
+            q = g(i)[1]
+            r = g(i)[2]
+            s = g(i)[3]
+            if nopl6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p,q,r,s) > l3[1]:
+                l3.clear()
+                l3.append(i)
+                l3.append(nopl6(p1,q1,r1,s1,h1,b1,p2,q2,r2,s2,h2,b2,p3,q3,r3,s3,h3,b3,p4,q4,r4,s4,h4,b4,p5,q5,r5,s5,h5,b5,p,q,r,s))
+    return l3
+
+p1 = 0
+q1 = 0
+r1 = 1
+s1 = 1
+s,t = input("first guess hit and blow")
+s = int(s)
+t = int(t)
+L1 = [(0, 0, 1, 1, 3, 0, 0, 0, 1, 2), (0, 0, 1, 1, 2, 2, 0, 1, 0, 1), 
+(0, 0, 1, 1, 2, 1, 0, 1, 1, 2), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3), 
+(0, 0, 1, 1, 1, 2, 0, 1, 0, 2), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3), 
+(0, 0, 1, 1, 1, 0, 0, 2, 3, 3), (0, 0, 1, 1, 0, 4, 1, 1, 0, 0), 
+(0, 0, 1, 1, 0, 3, 1, 1, 0, 2), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3), 
+(0, 0, 1, 1, 0, 1, 1, 2, 3, 3), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4)]
+
+for (a1,a2,a3,a4,H1,B1,b1,b2,b3,b4) in L1:
+    if H1 == s and B1 == t:
+        A1 = (1000*b1 + 100*b2 + 10*b3 + b4)
+    else:
+        continue
+print(A1+1111)
+p2,q2,r2,s2 = g(A1)
+d,e = input("2nd guess hit and blow")
+d = int(d)
+e = int(e)
+L2 = [(0, 0, 1, 1, 3, 0, 0, 0, 1, 2, 4, 0, 0, 0, 1, 2), (0, 0, 1, 1, 3, 0, 0, 0, 1, 2, 3, 0, 0, 0, 0, 3), 
+(0, 0, 1, 1, 3, 0, 0, 0, 1, 2, 2, 2, 0, 0, 2, 1), (0, 0, 1, 1, 3, 0, 0, 0, 1, 2, 2, 1, 0, 0, 0, 3), 
+(0, 0, 1, 1, 3, 0, 0, 0, 1, 2, 2, 0, 0, 1, 3, 4), (0, 0, 1, 1, 2, 2, 0, 1, 0, 1, 4, 0, 0, 1, 0, 1), (0, 0, 1, 1, 2, 2, 0, 1, 0, 1, 2, 2, 0, 0, 0, 1), 
+(0, 0, 1, 1, 2, 2, 0, 1, 0, 1, 0, 4, 1, 0, 1, 0), (0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 4, 0, 0, 1, 1, 2), (0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 3, 0, 0, 0, 3, 4), 
+(0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 2, 2, 0, 0, 0, 1), (0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 2, 1, 0, 1, 3, 4), (0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 2, 0, 0, 3, 0, 4), 
+(0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 1, 2, 1, 0, 3, 4), (0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 1, 1, 3, 4, 0, 1), (0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 0, 4, 1, 0, 2, 1), 
+(0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 0, 3, 1, 0, 3, 4), (0, 0, 1, 1, 2, 1, 0, 1, 1, 2, 0, 2, 3, 0, 0, 4), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 4, 0, 0, 0, 2, 3), 
+(0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 3, 0, 0, 4, 2, 5), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 2, 2, 0, 0, 3, 2), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 2, 1, 0, 1, 3, 4), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 2, 0, 0, 1, 2, 4), 
+(0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 1, 2, 0, 1, 1, 2), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 1, 1, 0, 2, 4, 1), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 1, 0, 0, 4, 1, 4), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 0, 2, 0, 2, 0, 0), 
+(0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 0, 1, 1, 2, 0, 4), (0, 0, 1, 1, 2, 0, 0, 0, 2, 3, 0, 0, 1, 1, 4, 4), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 4, 0, 0, 1, 0, 2), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 3, 0, 0, 0, 0, 3), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 2, 2, 0, 0, 0, 1), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 2, 1, 0, 0, 3, 4), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 2, 0, 0, 0, 3, 4), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 1, 2, 0, 0, 0, 3), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 1, 1, 0, 1, 3, 4), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 0, 4, 1, 0, 2, 0), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 0, 3, 0, 0, 3, 4), (0, 0, 1, 1, 1, 2, 0, 1, 0, 2, 0, 2, 0, 3, 0, 4), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 4, 0, 0, 2, 0, 3), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 3, 0, 0, 2, 2, 4), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 2, 2, 0, 0, 0, 2), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 2, 1, 0, 1, 2, 4), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 2, 0, 0, 0, 4, 4), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 1, 3, 0, 0, 0, 1), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 1, 2, 2, 0, 4, 1), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 1, 1, 2, 4, 0, 0), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 1, 0, 0, 1, 1, 4), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 0, 4, 0, 0, 2, 0), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 0, 3, 0, 0, 3, 4), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 0, 2, 0, 4, 1, 0), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 0, 1, 0, 4, 3, 1), (0, 0, 1, 1, 1, 1, 0, 2, 0, 3, 0, 0, 1, 4, 1, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 4, 0, 0, 2, 3, 3), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 3, 0, 0, 2, 2, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 2, 2, 0, 0, 2, 3), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 2, 1, 0, 3, 0, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 2, 0, 0, 3, 0, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 1, 3, 0, 0, 0, 2), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 1, 2, 2, 0, 3, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 1, 1, 3, 3, 1, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 1, 0, 1, 4, 1, 2), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 0, 3, 0, 2, 2, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 0, 2, 2, 0, 2, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 0, 1, 0, 4, 1, 4), (0, 0, 1, 1, 1, 0, 0, 2, 3, 3, 0, 0, 0, 4, 1, 4), (0, 0, 1, 1, 0, 4, 1, 1, 0, 0, 4, 0, 1, 1, 0, 0), (0, 0, 1, 1, 0, 3, 1, 1, 0, 2, 4, 0, 1, 1, 0, 2), (0, 0, 1, 1, 0, 3, 1, 1, 0, 2, 3, 0, 0, 0, 3, 4), (0, 0, 1, 1, 0, 3, 1, 1, 0, 2, 2, 2, 1, 1, 2, 0), (0, 0, 1, 1, 0, 3, 1, 1, 0, 2, 2, 1, 1, 3, 4, 1), (0, 0, 1, 1, 0, 3, 1, 1, 0, 2, 2, 0, 0, 1, 0, 3), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 4, 0, 1, 2, 0, 3), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 3, 0, 0, 0, 3, 4), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 2, 2, 0, 0, 0, 2), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 2, 1, 1, 2, 4, 0), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 2, 0, 0, 0, 2, 4), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 1, 3, 0, 0, 0, 1), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 1, 2, 0, 4, 0, 2), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 1, 1, 0, 3, 0, 4), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 1, 0, 0, 4, 0, 5), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 0, 4, 0, 0, 2, 0), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 0, 3, 0, 0, 2, 4), (0, 0, 1, 1, 0, 2, 1, 2, 0, 3, 0, 2, 0, 0, 4, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 4, 0, 1, 2, 3, 3), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 3, 0, 0, 2, 2, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 2, 2, 0, 0, 2, 3), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 2, 1, 1, 3, 1, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 2, 0, 0, 4, 3, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 1, 3, 0, 0, 0, 2), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 1, 2, 2, 1, 3, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 1, 1, 3, 3, 0, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 1, 0, 0, 4, 0, 2), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 0, 3, 1, 2, 2, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 0, 2, 2, 1, 2, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 0, 1, 1, 4, 0, 4), (0, 0, 1, 1, 0, 1, 1, 2, 3, 3, 0, 0, 0, 4, 0, 4), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 4, 0, 2, 2, 3, 4), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 3, 0, 2, 3, 3, 5), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 2, 2, 0, 2, 0, 3), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 2, 1, 0, 2, 3, 3), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 2, 0, 2, 5, 2, 5), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 1, 3, 0, 2, 2, 3), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 1, 2, 2, 3, 4, 3), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 1, 1, 2, 2, 5, 5), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 1, 0, 2, 5, 4, 5), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 0, 4, 0, 3, 0, 0), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 0, 3, 3, 5, 4, 2), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 0, 2, 5, 5, 2, 3), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 0, 1, 5, 5, 3, 5), (0, 0, 1, 1, 0, 0, 2, 2, 3, 4, 0, 0, 5, 5, 5, 5)]
+for (a1,a2,a3,a4,H1,B1,b1,b2,b3,b4,H2,B2,c1,c2,c3,c4) in L2:
+    if H1 == s and B1 == t and H2 == d and B2 == e:
+        A2 = (1000*c1 + 100*c2 + 10*c3 + c4)
+    else:
+        continue
+print(A2+1111)
+p3,q3,r3,s3 = g(A2)
+d1,e1 = input("3rd guess hit and blow")
+d1 = int(d1)
+e1 = int(e1)
+a3 = fton_4(p1,q1,r1,s1,s,t,p2,q2,r2,s2,d,e,p3,q3,r3,s3,d1,e1)
+print(a3[0]+1111)
+p4,q4,r4,s4 = g(a3[0])
+d2,e2 = input("4th guess hit and blow")
+d2 = int(d2)
+e2 = int(e2)
+a4 = fton_5(p1,q1,r1,s1,s,t,p2,q2,r2,s2,d,e,p3,q3,r3,s3,d1,e1,p4,q4,r4,s4,d2,e2)
+print(a4[0]+1111)
+p5,q5,r5,s5= g(a4[0])
+d3,e3 = input("5th guess hit and blow")
+d3 = int(d3)
+e3 = int(e3)
+a5 = fton_6(p1,q1,r1,s1,s,t,p2,q2,r2,s2,d,e,p3,q3,r3,s3,d1,e1,p4,q4,r4,s4,d2,e2,p5,q5,r5,s5,d3,e3)
+print(a5[0]+1111)
