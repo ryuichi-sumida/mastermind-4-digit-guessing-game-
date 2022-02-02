@@ -1,5 +1,5 @@
 # mastermind-4-digit-guessing-game-
-complete mastermind algorithm 
+accurate mastermind algorithm(with an average of 4.56 turns to get the answer)
 
 this is an algorithm for guessing 4 digit number(ex. 1234, 4662)
 but the 4 digit must be smaller than 6667 and more than 1111
